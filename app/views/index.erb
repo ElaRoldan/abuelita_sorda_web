@@ -1,17 +1,15 @@
   <h1>Abuelita Sordita</h1>
-  <!-- Esto es Embedded Ruby y se inica con <% %> Cuando poner un signo de igual es como cuando pones un p en ruby normal tal como aparece en la variable abuelita-->
+  <div class="abue">
+
+  </div>
   <% if @abuelita %>
     <p>Tu Abuelita dice: "<span id="grandma_says"><%= @abuelita %></span>"</p>
   <% end %>
 
-  <!-- #Esta es una forma de html con action mandas a la direccion y post es el metodo-->
-  <form action="/abuelita" method="post">
-    <!-- Aqui se pone lo que quieres que aparezca en pantalla -->
-    Dile algo a tu abuelita:
-    <br>
-    <!-- Aqui solicitas una caja de texto -->
-    <input type="text" name="user_input">
-    <!-- Estos son los comandos para el boton -->
-    <input type="submit" value="Dilo!">
-  </form>
-
+    <form id="target" action="/abuelita" method="post">
+      Dile algo a tu abuelita:
+      <br>
+      <input type="text" name="user_input">
+      <input type="submit" value="Dilo!">
+    </form>
+ 
